@@ -1,0 +1,13 @@
+# Backup files
+bkp 01/
+backup/
+bakcup/
+bkp*
+backup*
+bakcup*
+*.bkp
+*.bakcup
+*.backup
+**/bkp/**
+**/backup/**
+**/bakcup/**
