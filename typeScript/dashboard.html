@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Premium App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" href="../image/guzman.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar fade-in">
+            
+            <div class="sidebar-header">
+                <img src="../image/logo.png" alt="Logo" class="logo">
+                <h2>Premium Pets</h2>
+            </div>
+
+            <div class="nav-separator"></div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-columns"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item " id="nav-users" >
+                    <i class="fa-solid fa-users"></i>
+                    <span>Propietarios</span>
+                    <span class="tooltip-text">
+                        Administrar Propietarios
+                    </span>
+                </a>
+
+                <a href="#" class="nav-item " id="nav-pets">
+                    <i class="fa-solid fa-paw"></i>
+                    <span>Mascotas</span>
+                    <span class="tooltip-text">
+                        Administrar Mascotas
+                    </span>
+                </a>
+                <a href="#" class="nav-item" id="nav-citas">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Citas</span>
+                </a>
+                <a href="#" class="nav-item" id="nav-profile">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Mi Perfil</span>
+                </a>
+            </nav>
+            
+            <div class="nav-separator"></div>
+
+            <div class="nav-footer">
+                <a href="#" class="nav-item logout-btn" id="logout-btn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Cerrar Sesión</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content fade-in">
+            <header class="content-header">
+                <h1>Panel de Control</h1>
+                <p class="subtitle" style="text-align: left; margin-bottom: 0;">Bienvenido de nuevo a tu gestión administrativa</p>
+            </header>
+
+            <div class="welcome-card">
+                <h2>Resumen General</h2>
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <h3>Usuarios Activos</h3>
+                        <span>1,234</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Mascotas Registradas</h3>
+                        <span>567</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Citas</h3>
+                        <span>18</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Nuevos Hoy</h3>
+                        <span>12</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
